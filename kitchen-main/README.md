@@ -1,0 +1,17 @@
+# Kitchen
+
+##Docker
+1. Create docker image
+```
+docker build -t image2 .
+```
+
+2. Create docker communication network
+```
+docker network create network1
+```
+
+3. Create and run docker container on network
+```
+docker run -d --net network1 image2
+```
